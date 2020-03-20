@@ -17,6 +17,6 @@
     "moduleFileExtensions": ["py"],
     "runner": "jest-pytest",
     "testPathIgnorePatterns": [],
-    "testMatch": ["<rootDir>/tests/test_*.py"]
+    "testMatch": ["**/test_*.py"]
   }
 }
