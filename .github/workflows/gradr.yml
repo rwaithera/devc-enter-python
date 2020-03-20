@@ -1,7 +1,7 @@
 name: Gradr
 
 on: 
-  pull_request:
+  push:
     branches:
     - master
 
