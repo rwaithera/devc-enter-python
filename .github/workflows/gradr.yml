@@ -57,7 +57,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest==4.0.0 pytest-jest
         yarn install
-        yarn add jest@25.0.1 jest-pytest
+        yarn add jest@25.1.0 jest-pytest
 
     - name: Prepare Audits
       uses: actions/checkout@v2
