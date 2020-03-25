@@ -41,7 +41,7 @@ jobs:
 
     strategy:
       matrix:
-        python-version: [2.7, 3.5, 3.6, 3.7, 3.8]
+        python-version: [3.5]
 
     steps:
     - name: Checkout Repo
@@ -79,7 +79,7 @@ jobs:
 
     strategy:
       matrix:
-        python-version: [3.7]
+        python-version: [3.5]
 
     steps:
     - name: Checkout Repo
