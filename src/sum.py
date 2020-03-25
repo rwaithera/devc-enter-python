@@ -2,7 +2,7 @@ from functools import reduce
 import re
 
 def sum(*args):
-    prog = re.compile("(\d+(?:\.\d+)?)") 
+    prog = re.compile("(-?\d+(?:\.\d+)?)") 
     arr = filter(lambda item: prog.match(str(item)), args)
     arr = map(lambda x: float(x) if isinstance(x, str) else x, arr)
 
