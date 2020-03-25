@@ -20,7 +20,7 @@
     "runner": "jest-pytest",
     "testPathIgnorePatterns": [],
     "testMatch": [
-      "**/audits/**/test_*.py"
+      "**/test_*.py"
     ]
   }
 }
