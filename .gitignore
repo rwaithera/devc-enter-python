@@ -7,4 +7,5 @@ node_modules/
 .pytest_cache/
 .vscode/
 tests/
+audits/
 node_modules
