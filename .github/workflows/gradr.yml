@@ -65,10 +65,8 @@ jobs:
         repository: rwaithera/python-audits
         path: audits
 
-    - name: Pip list
-      run: |
-        pip list
-        yarn list
+    - name: List files
+      run: ls -al
         
     - name: Run Audits
       run: yarn jest audits/ch-1 --json --outputFile=audits/ch-1.json --noStackTrace
