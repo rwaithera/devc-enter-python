@@ -2,7 +2,6 @@
   "name": "devc-center",
   "version": "1.0.0",
   "description": "devc-on-python",
-  "main": "index.js",
   "repository": "git@github.com:rwaithera/devc-enter-python.git",
   "author": "Ruth Waithera <ruthnjambuya@gmail.com>",
   "license": "MIT",
