@@ -57,7 +57,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest==3.5.0 pytest-jest
         yarn install
-        yarn add jest jest-pytest @babel/core @babel/preset-env babel-jest axios @actions/core @actions/github
+        yarn add jest@^22.1.4 jest-pytest@^0.7.0 @babel/core @babel/preset-env babel-jest axios @actions/core @actions/github
 
     - name: Prepare Audits
       uses: actions/checkout@v2
