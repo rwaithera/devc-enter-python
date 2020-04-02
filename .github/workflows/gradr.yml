@@ -64,6 +64,9 @@ jobs:
       with: 
         repository: rwaithera/python-audits
         path: audits
+
+    - name: See test_suite content
+      run: cat audits/ch-1/test_sum.py
         
     - name: Run Audits
       run: yarn jest audits/ch-1 --json
