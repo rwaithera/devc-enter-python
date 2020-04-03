@@ -55,9 +55,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest pytest-jest pytest-json
+        pip install py pytest pytest-json
         yarn install
-        yarn add jest@^22.1.4 jest-pytest@^0.7.0 @babel/core @babel/preset-env babel-jest axios @actions/core @actions/github
+        yarn add jest jest-pytest @babel/core @babel/preset-env babel-jest axios @actions/core @actions/github
         cd pytest-runner && yarn install --modules-folder ./node_modules && cd -
 
     - name: Prepare Audits
@@ -67,10 +67,10 @@ jobs:
         path: audits
 
     - name: See test_suite content
-      run: ls -al pytest-runner/node_modules
+      run: ls -al pytest-runner/src
         
     - name: Run Audits
-      run: yarn jest audits/ch-1 --json
+      run: yarn jest audits/ch-1 --json --outputFile=audits/ch-1.json
 
     - name: Report Audit Stats
       uses: ./.github/actions/ch-1
