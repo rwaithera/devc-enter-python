@@ -4,6 +4,7 @@ regex.py
 src/__*
 devc_first_test.egg-info/
 node_modules/
+pytest-runner/node_modules/
 .pytest_cache/
 .vscode/
 tests/
