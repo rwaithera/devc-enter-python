@@ -67,7 +67,7 @@ jobs:
         path: audits
 
     - name: See test_suite content
-      run: ls -al
+      run: ls -al pytest-runner/node_modules
         
     - name: Run Audits
       run: yarn jest audits/ch-1 --json
