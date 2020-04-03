@@ -17,7 +17,7 @@
     "moduleFileExtensions": [
       "py"
     ],
-    "runner": "./pytest-runner",
+    "runner": "<rootDir>/pytest-runner",
     "testPathIgnorePatterns": [],
     "testMatch": [
       "**/audits/**/test_*.py"
