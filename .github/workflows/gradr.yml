@@ -58,7 +58,7 @@ jobs:
         pip install py pytest pytest-json
         yarn install
         yarn add jest @babel/core @babel/preset-env babel-jest axios @actions/core @actions/github
-        cd pytest-runner && yarn install --modules-folder ./node_modules && cd -
+        cd pytest-runner && yarn install && cd -
 
     - name: Prepare Audits
       uses: actions/checkout@v2
