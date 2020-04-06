@@ -54,11 +54,12 @@ jobs:
     
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install py pytest==3.5.0 pytest-jest pytest-json
+        pip install py pytest-jest pytest-json
+        pip install --editable .
         yarn install
-        yarn remove jest
-        yarn add jest@22.4.4 jest-pytest @babel/core @babel/preset-env babel-jest axios @actions/core @actions/github
+        yarn remove jest 
+        yarn add jest @babel/core @babel/preset-env babel-jest axios @actions/core @actions/github
+        cd pytest-runner && yarn install && cd -
 
     - name: Prepare Audits
       uses: actions/checkout@v2
@@ -96,11 +97,13 @@ jobs:
     
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install pytest==3.5.1 pytest-jest
+        pip install py pytest-jest pytest-json
+        pip install --editable .
         yarn install
-        yarn add jest@22.4.4 jest-pytest@0.2.0 @babel/core @babel/preset-env babel-jest axios @actions/core @actions/github
-
+        yarn remove jest 
+        yarn add jest @babel/core @babel/preset-env babel-jest axios @actions/core @actions/github
+        cd pytest-runner && yarn install && cd -
+    
     - name: Prepare Audits
       uses: actions/checkout@v2
       with: 
