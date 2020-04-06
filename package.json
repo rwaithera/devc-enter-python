@@ -17,7 +17,7 @@
     "moduleFileExtensions": [
       "py"
     ],
-    "runner": "<rootDir>/jest-pytest/index.js",
+    "runner": "jest-pytest",
     "testPathIgnorePatterns": [],
     "testMatch": [
       "**/audits/**/test_*.py"
