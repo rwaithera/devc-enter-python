@@ -11,3 +11,4 @@ tests/
 audits/
 node_modules
 yarn-error.log
+.venv/

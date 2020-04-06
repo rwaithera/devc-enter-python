@@ -51,6 +51,7 @@ class TestRunner {
         let result;
         try {
           result = JSON.parse(stderr);
+          console.log(result);
         } catch (error) {
           reject(error);
         }
